@@ -10,4 +10,4 @@
 ## Installation
 
 1. Install [Composerr](https://getcomposer.org/download/)
-2. Install Laravel Framework [Composerr](https://laravel.com/docs/master/installation) :japanese_goblin:
+2. Install [Laravel Framework](https://laravel.com/docs/master/installation) :japanese_goblin:
