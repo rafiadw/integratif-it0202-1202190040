@@ -19,7 +19,7 @@ class PostController extends Controller
 
     public function kumparan()
     {  
-        $xml = simplexml_load_file("");
+        $xml = simplexml_load_file("https://lapi.kumparan.com/v2.0/rss/");
         $i = 0;
         foreach ($xml->channel->item as $data) if ($i < 5){
             //  echo '<h5> ' . $data->title . '</ h5>';
