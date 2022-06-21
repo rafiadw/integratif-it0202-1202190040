@@ -11,12 +11,13 @@
 
 1. Install [Composerr](https://getcomposer.org/download/)
 2. Install [Laravel Framework](https://laravel.com/docs/master/installation) :japanese_goblin:
-3. Make Model, Controller, Migration, and view of post
-4. Database Schema
+3. Install [MYSQL](https://www.mysql.com/products/workbench/)
+4. Make Model, Controller, Migration, and view of post
+5. Database Schema
    ![database schema](/public/schema.jpeg)
-5. list of rss url i use :
+6. list of rss url i use :
    [kumparan](https://lapi.kumparan.com/v2.0/rss/),
    [tempo](https://rss.tempo.co/nasional),
    [vise](https://www.vice.com/id/rss?locale=id_id)
-6. Make view page using [Bootstap](https://getbootstrap.com/) cdn
+7. Make view page using [Bootstap](https://getbootstrap.com/) cdn
    ![database schema](/public/website.png)
