@@ -17,3 +17,4 @@
 5. list of rss url i use :
    [kumparan](https://lapi.kumparan.com/v2.0/rss/)
    [tempo](https://rss.tempo.co/nasional)
+   [vise](https://www.vice.com/id/rss?locale=id_id)

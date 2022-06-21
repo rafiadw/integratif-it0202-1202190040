@@ -13,6 +13,7 @@ class PostController extends Controller
     public function index(){
         $this->kumparan();
         $this->tempo();
+        $this->vice();
         $posts = DB::select('select * from posts where image != ""');
         return view('post',['posts'=>$posts]);
     }
@@ -22,15 +23,8 @@ class PostController extends Controller
         $xml = simplexml_load_file("https://lapi.kumparan.com/v2.0/rss/");
         $i = 0;
         foreach ($xml->channel->item as $data) if ($i < 5){
-            //  echo '<h5> ' . $data->title . '</ h5>';
-            //  echo '<p> ' . $data->link . '</p>';
-            //  echo '<p>' . $data->enclosure['url'] . '</p>';
-            //  echo 'insert ' . $data->description . '</ br>';
-         
             $values = array('id' => 0, 'title' => $data->title, 'link' => $data->link, 'image' => $data->enclosure['url'], 'description' => $data->description);
-            DB::table('posts')->insert($values);
-         
-            
+            DB::table('posts')->insert($values);     
             $i += 1;
         }
     }
@@ -41,17 +35,21 @@ class PostController extends Controller
        
         $i = 0;
         foreach ($xml->channel->item as $data) if ($i < 5){
-            //  echo '<h5> ' . $data->title . '</ h5>';
-            //  echo '<p> ' . $data->link . '</p>';
-            //  echo '<p>' . $data->enclosure['url'] . '</p>';
-            //  echo 'insert ' . $data->description . '</ br>';
-         
-            $values = array('id' => 0, 'title' => $data->title, 'link' => $data->link, 'image' => $data->img, 'description' => $data->description);
-            
+            $values = array('id' => 0, 'title' => $data->title, 'link' => $data->link, 'image' => $data->img, 'description' => $data->description);       
             DB::table('posts')->insert($values);
             $i += 1;
         }
     }
 
+    public function vice()
+    {  
+        $xml = simplexml_load_file("https://www.vice.com/id/rss?locale=id_id");
+        $i = 0;
+        foreach ($xml->channel->item as $data) if ($i < 5){
+            $values = array('id' => 0, 'title' => $data->title, 'link' => $data->link, 'image' => $data->enclosure['url'], 'description' => $data->description);
+            DB::table('posts')->insert($values);     
+            $i += 1;
+        }
+    }
     
 }
