@@ -23,6 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="https://github.com/rafiadw/integratif-it0202-1202190040">Github</a>
+            <a class="nav-link active" aria-current="page" href="/pokemon">Pokemon</a>
           </div>
         </div>
       </div>

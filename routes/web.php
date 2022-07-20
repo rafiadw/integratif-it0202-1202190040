@@ -16,8 +16,8 @@ use App\Http\Controllers\RssController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/pokemon', function () {
+    return view('pokemon');
+});
 
 Route::get('/',[PostController::class, 'index']);

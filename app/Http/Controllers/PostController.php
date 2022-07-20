@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Post;
+use App\Models\Posts;
 
 use DB;
 
@@ -50,6 +50,12 @@ class PostController extends Controller
             DB::table('posts')->insert($values);     
             $i += 1;
         }
+    }
+
+    public function getNews(){
+        // get from news
+        $posts = Posts::get();
+        return response()->json($posts, 200);
     }
     
 }
