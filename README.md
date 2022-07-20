@@ -26,8 +26,9 @@ Route::get('/',[PostController::class, 'index']);
    [tempo](https://rss.tempo.co/nasional),
    [vise](https://www.vice.com/id/rss?locale=id_id)
 8. Make view page using [Bootstap](https://getbootstrap.com/) cdn
-   ![Pokemon API](/public/website.png)
+   ![Display](/public/website.png)
 9. Display of Search Pokemon
    ![JSON](/public/pokemon.png)
+   ![JSON](/public/pokemon_2.png)
 10. Make JSON from RSS Database Content,
     ![JSON](/public/json.png)
